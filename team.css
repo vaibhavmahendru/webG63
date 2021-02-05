@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{background: url(img/final.png) ; 
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+}
+h1{
+	text-align: center;
+	color: #fff;
+	margin-top: 3%; 
+}
+.container-fluid{
+	justify-content: center;
+	
+}
+.row{
+	text-align: center;
+}
+.title {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: underline;
+	margin-bottom: 2%;
+}
+.row .col-sm-4{
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: uppercase;
+	margin : auto;
+	margin-top: 11%;
+	
+}
+img{
+	margin: auto;
+}
+
+h3{
+	font-size: 20px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin-top: 5px;	
+
+}
+p{
+	width: 100%;
+}

@@ -1,0 +1,13 @@
+[1008/220555.477:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/221555.483:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/221555.484:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\HP\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a0e2417a-bf1c-403b-9f35-376911b2cf08: The system cannot find the path specified. (0x3)
+[1008/221555.485:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\HP\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\b3f5ee43-ce86-47b1-9190-c40850ff019d: The system cannot find the path specified. (0x3)
+[1008/221555.486:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\HP\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\bd9ea669-8fda-4cd3-b00b-52812ca86d16: The system cannot find the path specified. (0x3)
+[1008/221555.486:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1008/221555.487:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/221555.487:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/222055.478:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/223555.479:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/223901.648:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1008/231322.096:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1009/082655.605:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

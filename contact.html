@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+
+	  <link rel = "stylesheet" href = "contact.css">
+
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <title> Contact Us </title>
+  </head>
+  
+  </script>
+  <body>
+
+  	<section id="contact-section">
+  		<div class="container">
+  			<h2> Contact Us </h2>
+  			 <p> </p>
+         <div  class="contact-form">
+  			 	
+  			 	<div>
+  			 		<a href="https://www.dituniversity.edu.in/"> <i class="fa fa-map-marker"></i></a><span class="form-info"> DIT University</span><br>
+  			 		<i class="fa fa-phone"></i><span class="form-info"> 00000XXXXXX</span><br>
+  			 		<a href = "mailto:xyz@gmail.com"><i class="fa fa-envelope"></i></a><<span class="form-info"> x@gmail.com </span>
+  			 	</div>
+
+  			 	<div>
+  			 		<form onsubmit="return  validate()"action="welcome.html">
+  			 			<input id="fn" type="text" placeholder="first-name" required><br>
+  			 			<input id="ln" type="text" placeholder="last-name" required><br>
+  			 			<input id="em" type="text" placeholder="e-mail" required><br>
+  			 			<input id="sub" type="text" placeholder="subject" required><br>
+  			 			<textarea id="ta" name="message" placeholder="message" rows="5" required></textarea><br> <br>
+  			 			<button onclick="validate()" type="submit" class="submit"> send message</button>
+  			 		</form>
+  			 		
+  			 	</div>
+
+  			 </div>
+  		</div>
+  	</section>
+      <script type="text/javascript">
+    
+        function validate()
+         {
+          var first-name = document.getElementById('fn').value;
+
+          var regx = /^[a-zA-Z. ]{2,20}$/; 
+
+          if (regx.test(first-name)) 
+          {
+            return true;
+
+          }
+          else
+          {
+            alert("invalid input");
+            return false;
+          }
+
+         }
+      </script>
+  	
+  </body>
+ </html> 

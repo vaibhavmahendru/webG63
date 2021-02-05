@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel = "stylesheet" href = "sign.css"> 
+
+
+
+  <title> Sign Up </title>
+  </head>
+  <script type="text/javascript">
+    
+    function valid()
+     {
+      var Name = document.getElementById('ip').value;
+      var Email = document.getElementById('mail').value;
+      var Password = document.getElementById('pass').value;
+      var ConfirmPassword = document.getElementById('confirm').value;
+
+      var regx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
+      var regexp = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\S+$).{8, 20}$/; 
+      
+
+        if((Name.length <= 5) || (Name.length >18))
+        {
+          alert("Name must be 6-18 characters long");
+          return false;
+        }
+
+        if(!isNaN(Name))
+         {
+          alert("Only Characters are allowed for Name");
+          return false;
+         } 
+         
+        if (regx.test(Email))
+            {
+            return true;
+          }
+          else
+          {
+            alert("invalid email");
+            return false;
+          }
+
+            
+          if (regexp.test(Password)) 
+          {
+            return true;
+          }
+          else
+          {
+            alert("Password must contain a alphabet character , a numeric character a special character and must be longer than 8 characters");
+            return false;
+          }
+          if(password == ConfirmPassword)
+          {
+            return true;
+          }
+          else
+          {
+            alert("password mismatch");
+            return false;
+          }
+
+
+          }
+       
+  </script>
+       <body>
+       	 <div class="up">
+       	 	
+       	 	<h1>Sign Up Now</h1>
+       	 	<form onsubmit="return  valid()"action="welcome.html">
+       	 	<input id="ip" type="text" class="box" placeholder="Name" required><br>
+  			 	<input id="mail" type="text" class="box" placeholder="Email" required><br>
+  			 	<input id="pass" type="password" class="box" placeholder="Password" required><br> 
+          <input id="confirm" type="password" class="box" placeholder="ConfirmPassword" required><br> <br>
+  			 	
+  			 	<button onclick="valid()" type="submit" class="s-btn">Sign Up</button>
+  			 	
+  			 	<p class="or">OR</p>
+  			 	
+  			 	<p class="ab">Do You Have An Account? <a href="log.html">sign in </a></p>
+       	 	</form>
+       	 </div>
+       	 
+       </body>
+</html>       

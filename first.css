@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+body{
+	overflow-x: hidden;
+
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+
+/*============= IMAGE SLIDER =============*/
+
+.carousel-item {
+  background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: contain;
+    -o-background-size: cover;
+}
+.image{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed; 
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+
+}
+
+
+.navbar{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	letter-spacing: .1rem;
+	background: rgba(0,0,0,.4)!important;
+}
+.navbar-brand{
+	font-weight: 800;
+	margin-left: 12%;
+}
+
+.navbar-nav li{
+	padding-right: .7rem;
+
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: #fff;
+	padding-top: .7rem;
+}
+.navbar-light .navbar-item active .nav-link{
+	color: #ffdb12;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #ffdb12;
+}
+
+.carousel-item{
+	height: 100vh;
+}
+.carousel-item img{
+	filter: blur();
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed; 
+
+	
+}
+
+.carousel-item active{
+	height: 100vh;
+}
+.carousel-caption{
+	bottom: 300px;
+	
+
+}
+.carousel-caption h5{
+	
+	letter-spacing: 1px;
+	font-size: 38px;
+	text-transform: uppercase;
+	color: #edebe1;
+	text-align: center;
+	width: 100%;
+	font-family: 'Electrolize', sans-serif;
+
+}
+.carousel-caption p{
+	font-size: 22px;
+	font-weight: 400;
+	color: #edebe1;
+	text-align: center;
+	width: 100%;
+  font-family: 'Electrolize', sans-serif;
+
+}
+@media (max-width: 987px) {
+    .carousel-caption{
+    	bottom: 290px;
+    }
+
+   .carousel-caption h5{
+   	font-size: 29px;
+   }	
+
+   .carousel-caption p{
+   	font-size: 18px;
+   }
+
+}
+
+@media (max-width: 767px) {
+    .carousel-caption{
+    	bottom: 255px;
+    }
+
+   .carousel-caption h5{
+   	font-size: 29px;
+   }	
+
+   .carousel-caption p{
+   	font-size: 18px;
+   }
+
+}
+
+@media (max-width: 560px) {
+    .carousel-caption{
+      bottom: 228px;
+    }
+
+  .carousel-caption h5{
+    font-size: 23px;
+  }
+  .carousel-caption p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 385px) {
+  .carousel-caption h5 {
+    font-size: 21px;
+  }
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+
+

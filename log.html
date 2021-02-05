@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel = "stylesheet" href = "log.css"> 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+  <title> Sign In </title>
+  </head>
+     <script type="text/javascript">
+        function validation(){
+           
+           var Email = document.getElementById('mails').value;
+           var Password = document.getElementById('passw').value;
+
+           var regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+           var reg = /(^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,}))/;
+
+           if (regx.test(Email))
+            {
+              return true;
+            }
+            else
+            {
+              alert("invalid email");
+            }
+
+          
+            if (reg.test(Password)) 
+            {
+              return true;
+            }
+            else
+            {
+              alert("Password must contain a alphabet character , a numeric character and a special character");
+              return false;
+            }
+        }
+     </script>
+       <body>
+       	 <div class="in">
+       	 	
+       	 	<h1>Sign In Now</h1>
+       	 	<form onsubmit="return validation() "action="welcome.html">
+       	 		
+  			 	<input id="mails" type="text" class="box1" placeholder="Email" required><br>
+  			 	<input id="passw" type="text" class="box1" placeholder="Password" required><br>
+  			 	<button onclick="validation()" type="button" class="l-btn">Sign in</button>
+  			 	
+  			 	
+       	 	</form>
+       	 </div>
+       	 
+       </body>
+</html>       
